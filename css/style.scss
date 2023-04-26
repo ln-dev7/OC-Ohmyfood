@@ -290,23 +290,23 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          svg {
+          img {
             transition: 0.3s ease;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
           }
-          svg:last-child {
+          img:last-child {
             transform: translate(-50%, -50%) scale(0);
             opacity: 0;
           }
           &:hover {
-            svg:first-child {
+            img:first-child {
               transform: translate(-50%, -50%) scale(0);
               opacity: 0;
             }
-            svg:last-child {
+            img:last-child {
               transform: translate(-50%, -50%) scale(1);
               opacity: 1;
             }

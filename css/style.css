@@ -282,22 +282,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-.restaurants-items .card-body-heart svg {
+.restaurants-items .card-body-heart img {
   transition: 0.3s ease;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.restaurants-items .card-body-heart svg:last-child {
+.restaurants-items .card-body-heart img:last-child {
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
 }
-.restaurants-items .card-body-heart:hover svg:first-child {
+.restaurants-items .card-body-heart:hover img:first-child {
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
 }
-.restaurants-items .card-body-heart:hover svg:last-child {
+.restaurants-items .card-body-heart:hover img:last-child {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }

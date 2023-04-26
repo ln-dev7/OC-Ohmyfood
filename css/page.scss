@@ -117,34 +117,33 @@ body {
         line-height: 41px;
         color: #101010;
       }
-      div {
+      &-heart {
+        position: relative;
+        width: 25px;
+        height: 25px;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        svg {
-          path {
-            //transition: 0.3s ease;
+        img {
+          transition: 0.3s ease;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        img:last-child {
+          transform: translate(-50%, -50%) scale(0);
+          opacity: 0;
+        }
+        &:hover {
+          img:first-child {
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0;
           }
-          defs linearGradient stop {
-            // transition: 0.3s ease;
-          }
-
-          &:hover {
-            path {
-              stroke: none;
-            }
-            defs {
-              linearGradient {
-                stop:first-child {
-                  stop-color: #9356dc;
-                }
-                stop:last-child {
-                  stop-color: #ff79da;
-                }
-              }
-            }
+          img:last-child {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
           }
         }
       }

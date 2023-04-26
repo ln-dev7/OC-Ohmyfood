@@ -108,20 +108,33 @@ body {
   line-height: 41px;
   color: #101010;
 }
-.main-menu .main-title div {
+.main-menu .main-title-heart {
+  position: relative;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-menu .main-title div svg:hover path {
-  stroke: none;
+.main-menu .main-title-heart img {
+  transition: 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.main-menu .main-title div svg:hover defs linearGradient stop:first-child {
-  stop-color: #9356dc;
+.main-menu .main-title-heart img:last-child {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
 }
-.main-menu .main-title div svg:hover defs linearGradient stop:last-child {
-  stop-color: #ff79da;
+.main-menu .main-title-heart:hover img:first-child {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+.main-menu .main-title-heart:hover img:last-child {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 .main-menu .section {
   width: 100%;
