@@ -235,6 +235,45 @@ body {
 .main-menu .section-items .card:hover .card-price {
   transform: translateX(0);
 }
+.main-menu .section.ease-1 {
+  animation: ease-1 1s ease;
+}
+@keyframes ease-1 {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.main-menu .section.ease-2 {
+  animation: ease-2 2s ease;
+}
+@keyframes ease-2 {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.main-menu .section.ease-3 {
+  animation: ease-3 3s ease;
+}
+@keyframes ease-3 {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .main-menu .main-button {
   display: flex;
   justify-content: center;

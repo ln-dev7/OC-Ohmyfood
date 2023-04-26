@@ -246,6 +246,23 @@ body {
           }
         }
       }
+
+      @for $i from 1 through 3 {
+        $ease-value: $i * 100px;
+        &.ease-#{$i} {
+          animation: ease-#{$i} #{$i}s ease;
+        }
+        @keyframes ease-#{$i} {
+          0% {
+            opacity: 0;
+            transform: translateX(#{$ease-value});
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
     }
     .main-button {
       display: flex;
